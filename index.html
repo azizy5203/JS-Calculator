@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Javascript Calculator</h2>
+        <input type="text" id="type" placeholder="0">
+        <div class="pad">
+            <!-- content is dynamically generated with JS  -->
+        </div>
+    </div>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: auto;
+            font-family: 'poppins', sans-serif;
+            background-image: url(./snow.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 400px;
+            height: 600px;
+            background-color: dodgerblue;
+            border-radius: 20px;
+        }
+        .title{
+            color: #001a33;
+        }
+        #type{
+            width: 90%;
+            height: 15%;
+            /* transform: translate(0,50px); */
+            border: 0;
+            background-color: #001a33;
+            border-radius: 5px;
+            font-size: 30pt;
+            color: #eee;
+        }
+        .pad{
+            width: 370px;
+            height: 400px;
+            background-color: #eee;
+            border-radius: 7px;
+            display: grid;
+            grid-template-columns: repeat(4,25%);
+            grid-template-rows: repeat(4,25%);
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+    <script src="./index.js"></script>
+</body>
+</html>
